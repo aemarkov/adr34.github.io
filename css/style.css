@@ -1,0 +1,494 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color:   rgba(238, 207, 186, 0.397);
+}
+
+
+
+ a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*
+nav{
+  margin-top: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+ul>li{
+  display: inline-block;
+}
+
+ ul li a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: #fff 1px solid;
+  padding: 15px;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+ ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}  */
+
+
+.container{
+  background-color: rgb(0, 0, 0);
+}
+
+.top-header{
+  background: linear-gradient(45deg, rgba(238, 207, 186, 0.397), rgba(197, 221, 232, 0.363));
+  min-height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info{
+  margin-top: 18em;
+  text-align: center;
+}
+
+.info p{
+  font-size: 3em;
+}
+
+
+
+
+.wrapper{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5em;
+}
+
+h2{
+
+  margin-top: 30px;
+  font-size: 46px;
+   text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+.portfolio{
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px solid #fff; */
+}
+
+.portfolio_item{
+  width: 300px;
+  /* border: 1px solid rgb(78, 78, 78); */
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(59, 59, 59);
+  overflow: hidden;
+}
+
+.portfolio_item:hover{
+  width: 300px;
+  /* border: 1px solid rgb(78, 78, 78); */
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(82, 82, 82);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.portfolio_item img{
+  width: 300px;
+}
+
+.portfolio_item span{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.portfolio_item a{
+  color: rgb(238, 238, 238);
+  font-weight: 500;
+
+}
+
+.wrapper ul li{
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.wrapper ul li i{
+  margin-right: 20px; 
+}
+.conteiner{
+    width: 1024px;
+    margin: 0 auto;
+    border-radius: 10px; 
+  }
+
+.image{
+  height: 250px;
+  width: 100%;
+  background-image:url(../image/шапка.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text{
+  font-size: 30px;
+  margin-top: 50px;
+  padding: 40px;
+  width: 80%;
+  color: black;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+/* body {
+  margin: 0;
+  background-image: url(https://html5book.ru/wp-content/uploads/2017/03/dulcineia-dias-195000.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+} */
+/* body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0), rgba(255,255,255,.8));
+} */
+nav {
+  text-align: center;
+
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color:rgb(223, 223, 223);
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  position: relative;
+  padding: 10px 15px;
+  font-size: 0.8em;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+/* .topmenu > li > a:before {   
+  content: "";
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  transition: .3s; 
+}*/
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.submenu {              
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 0px;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.submenu a {
+  
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: .3s linear;
+}
+.submenu a:hover {background: #2c2c2c;}
+
+@media(min-width: 1024px)
+{
+  .conteiner{
+    width: 1024px;
+    margin: 0 auto;
+    border-radius: 10px; 
+  }
+}
+@media(max-width: 1024px)
+{
+  .conteiner{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px; 
+  }
+}
+
+.layer{
+  float: left; 
+}
+
+/* h3{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 36%;
+  text-transform: uppercase;
+  color: black;
+} */
+
+
+
+
+.tablichki{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 36%;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.komplect1{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 32%;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.komplect2{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 39%;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.penali{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 31%;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.ognetushiteli{
+
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 39%;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.fonari{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 25%;
+  text-transform: uppercase;
+  color: black;
+}
+
+.adr1{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 13%;
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+}
+
+.adr2{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 17%;
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+}
+.adr3{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 25%;
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+}
+.adr4{
+  margin-top: 30px;
+  font-size: 46px;
+  padding-left: 27%;
+  text-transform: uppercase;
+  color: black;
+  font-size: 35px;
+}
+/* список ADR нач */
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 25px;
+  border-collapse: collapse;
+  color: rgba(41, 20, 0, 0.767);
+  text-align: left;
+  margin-left: 23%;
+  margin-right: 30%;
+  border: 1px black;
+  }
+
+  table th:first-child {
+  border-top-left-radius: 10px;
+  }
+  table th:last-child {
+  border-top-right-radius: 20px;
+  }
+  td {
+  padding: 3px;
+
+  }
+
+/* список ADR зак */
+
+
+
+/* О КОМПАНИИ НАЧ */
+
+
+.about1{
+  margin-left: 18%;
+  margin-right: 18%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  text-align: left;
+}
+/* О КОМПАНИИ ЗАК */
+
+
+
+
+
+
+/* КАРТА НАЧ */
+
+.map{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.map1{
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+}
+/* КАРТА ЗАК */
+
+
+
+
+
+.category-wrap {
+  padding: 15px;
+  background: white;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(238, 216, 216, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.category-wrap h3 {
+  font-size: 16px;
+  color: rgba(0,0,0,.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;
+}
+.category-wrap h3:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+}
+.category-wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+.category-wrap li {margin: 12px 0 0 0px;}
+.category-wrap a {
+  text-decoration: none;
+  display: block;  
+  font-size: 13px;
+  color: rgba(0,0,0,.6);
+  padding: 5px;
+  position: relative;
+  transition: .3s linear;
+}
+.category-wrap a:after {
+  position: absolute;
+  right: 5px;
+  color: white;
+  transition: .2s linear;
+}
+.category-wrap a:hover {
+  background: rgba(0, 0, 0, 0.178);
+  color: rgb(43, 43, 43);
+}
